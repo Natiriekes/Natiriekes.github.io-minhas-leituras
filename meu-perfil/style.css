@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Playfair', serif;
+  background-color: #faf5f0;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #d9c8ba;
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+
+header h1 {
+  font-family: 'Kalnia', serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  color: #5a4b3a;
+}
+
+/* Container principal */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Título secundário */
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #6b5641;
+}
+
+/* Lista de livros */
+.livros {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Cada livro */
+.livro {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.livro:hover {
+  transform: translateY(-8px);
+}
+
+.livro img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.livro h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #4e3c27;
+}
+
+.livro p {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #6b5a43;
+}
+
+.comprar-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #8d6748;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.comprar-btn:hover {
+  background-color: #6d4e36;
+  cursor: pointer;
+}
